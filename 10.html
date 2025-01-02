@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>表格範例</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    table {
+      width: 90%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      text-align: center;
+    }
+    th, td {
+      border: 1px solid #000;
+      padding: 10px;
+    }
+    th {
+      background-color: #f4f4f4;
+      font-weight: bold;
+    }
+    .merge-row {
+      background-color: #d9edf7;
+      font-weight: bold;
+      vertical-align: middle;
+    }
+    .special-row {
+      background-color: #ffcccc;
+      font-weight: bold;
+      color: red;
+    }
+    .arrow {
+      font-size: 24px;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <th>班級</th>
+      <th>編號</th>
+      <th>名稱</th>
+      <th>說明</th>
+    </tr>
+    <tr>
+      <td class="merge-row" rowspan="4">A</td>
+      <td>01</td>
+      <td>title01</td>
+      <td>Lorem ipsum dolor sit amet consectetur, adipiscing elit. Consectetur sit dolores repudiandae omnis doloremque non possimus quam quasi, voluptate adipisci.</td>
+    </tr>
+    <tr>
+      <td>02</td>
+      <td>title02</td>
+      <td class="arrow">
+        ← <span style="font-weight: bold;">重要資訊</span> →
+      </td>
+    </tr>
+    <tr>
+      <td>03</td>
+      <td>title03</td>
+      <td>Sunt culpa nulla porro veritatis, qui velit illum ducimus pariatur et beatae aperiam modi, quisquam consequatur blanditiis, doloribus nostrum laborum?</td>
+    </tr>
+    <tr class="special-row">
+      <td>04</td>
+      <td>title04</td>
+      <td>資料從缺</td>
+    </tr>
+    <tr>
+      <td class="merge-row" rowspan="6">B</td>
+      <td>05</td>
+      <td>title05</td>
+      <td>Culpa provident beatae rerum quidem minus. Aperiam ut, tenetur architecto, sint asperiores nulla modi necessitatibus consectetur omnis optio placeat quidem?</td>
+    </tr>
+    <tr>
+      <td>06</td>
+      <td>title06</td>
+      <td>Molestiae ipsum temporibus in deleniti eum corrupti sed, eveniet minus earum enim voluptatem suscipit! Et quas illum soluta rem ratione.</td>
+    </tr>
+    <tr>
+      <td>07</td>
+      <td>title07</td>
+      <td>At perferendis eius, sit iste sapiente nihil esse ullam! Natus quis aliquid iure esse fugiat tenetur ratione assumenda iusto ipsum!</td>
+    </tr>
+    <tr>
+      <td>08</td>
+      <td>title08</td>
+      <td>Nostrum ad, quaerat deserunt numquam earum consectetur necessitatibus deleniti ut quasi eum! Vitae asperiores ducimus facilis ratione laudantium repudiandae accusamus?</td>
+    </tr>
+    <tr>
+      <td>09</td>
+      <td>title09</td>
+      <td>Officia dolorum aut, corporis reiciendis sed nulla, omnis eveniet aspernatur veritatis magni distinctio, quas ea ratione esse asperiores illo.</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>title10</td>
+      <td>Ducimus ratione cumque autem quam voluptate adipisci eligendi dicta natus neque consequatur eveniet, qui assumenda itaque dignissimos laudantium nulla excepturi?</td>
+    </tr>
+  </table>
+</body>
+</html>
