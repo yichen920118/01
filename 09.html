@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>旅遊行程表</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 15px;
+      text-align: center;
+    }
+    th {
+      background-color: #e0f7fa;
+      color: #00796b;
+    }
+    /* 超連結樣式 */
+    a:hover{
+      text-decoration: none;
+      color: #1e88e5;
+      font-weight: bold;
+    }
+    a:hover{
+      color: #ff7043; /* 滑鼠懸停文字顏色 */
+    }
+    /* 懸停效果 */
+a:hover{
+      background-color: #eeeeee; /* 背景色變灰 */
+      transition: background-color 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="color: #00796b;">旅遊行程表</h1>
+  <table>
+    <tr>
+      <th>時間</th>
+      <th>地點</th>
+      <th>活動名稱</th>
+      <th>餐飲</th>
+    </tr>
+    <tr>
+      <td>08:00 - 09:00</td>
+      <td rowspan="2">登山區</td> <!-- 跨欄 -->
+      <td><a href="https://www.hiking.com">登山</a></td>
+      <td>早餐</td>
+    </tr>
+    <tr>
+      <td>09:00 - 11:00</td>
+      <td><a href="https://www.hiking.com">山頂合影</a></td>
+      <td>小食</td>
+    </tr>
+    <tr>
+      <td>11:00 - 12:00</td>
+      <td colspan="2"><a href="https://www.cruise.com">遊船體驗</a></td> <!-- 跨列 -->
+      <td>飲料供應</td>
+    </tr>
+    <tr>
+      <td>12:00 - 13:00</td>
+      <td>碼頭餐廳</td>
+      <td>午餐</td>
+      <td>海鮮大餐</td>
+    </tr>
+    <tr>
+      <td>14:00 - 17:00</td>
+      <td>主題公園</td>
+      <td>自由活動</td>
+      <td>小吃攤</td>
+    </tr>
+    <tr>
+      <td>18:00 - 19:00</td>
+      <td>城市中心</td>
+      <td>晚餐</td>
+      <td>當地特色菜</td>
+    </tr>
+    <tr>
+      <td>20:00 - 22:00</td>
+      <td>酒店</td>
+      <td>入住休息</td>
+      <td>-</td>
+    </tr>
+  </table>
+</body>
+</html>
