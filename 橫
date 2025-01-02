@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ul.menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            list-style: none;
+            z-index: 1;
+        }
+
+        ul.menu li {
+            margin: 0 15px;
+        }
+
+        ul.menu li a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        ul.menu li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            letter-spacing: 2px;
+        }
+
+        .wrap {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            scroll-behavior: smooth;
+        }
+
+        section {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+
+        section h1 {
+            font-size: 150px;
+            color: black;
+            text-transform: uppercase;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <!-- Horizontal menu -->
+    <ul class="menu">
+        <li><a href="#l">l</a></li>
+        <li><a href="#green">green</a></li>
+        <li><a href="#blue">blue</a></li>
+        <li><a href="#pink">pink</a></li>
+        <li><a href="#red">red</a></li>
+    </ul>
+
+    <div class="wrap">
+        <section id="l">
+            <h1>love</h1>
+        </section>
+        <section id="green">
+            <h1>green</h1>
+        </section>
+        <section id="blue">
+            <h1>blue</h1>
+        </section>
+        <section id="pink">
+            <h1>pink</h1>
+        </section>
+        <section id="red">
+            <h1>red</h1>
+        </section>
+    </div>
+</body>
+</html>
